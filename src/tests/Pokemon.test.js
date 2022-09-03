@@ -26,7 +26,7 @@ describe('tests the elements in the Pokémon section ', () => {
     expect(moarDetails).toBeInTheDocument();
     expect(moarDetails.href).toMatch('/pokemons/25');
   });
-  test('if the pokémon has a star if it has ben added to the favorites', () => {
+  test('if the star has ben added to the favorites and checks its attributes', () => {
     renderWithRouter(<App />);
     const moarDetails = screen.getByRole('link', { name: 'More details' });
     userEvent.click(moarDetails);
