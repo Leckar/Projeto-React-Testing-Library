@@ -20,7 +20,7 @@ describe('tests the elements in the Pokémon section ', () => {
     const pkmnType = screen.getByTestId('pokemon-type');
     expect(pkmnType.innerHTML).toBe('Electric');
   });
-  test('if the "More details" link exists and work', () => {
+  test('if the More details link exists and work', () => {
     renderWithRouter(<App />);
     const moarDetails = screen.getByRole('link', { name: 'More details' });
     expect(moarDetails).toBeInTheDocument();
