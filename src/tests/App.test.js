@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import renderWithRouter from '../renderWithRouter';
 import App from '../App';
 
-describe('tests the links to other pages exist and work', () => {
+describe('1 - Teste o componente <App.js />', () => {
   test('if the links exist on the page', () => {
     renderWithRouter(<App />);
     const homeLink = screen.getByRole('link', { name: 'Home' });

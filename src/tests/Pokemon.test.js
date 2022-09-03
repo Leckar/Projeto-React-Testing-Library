@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import renderWithRouter from '../renderWithRouter';
 import App from '../App';
 
-describe('tests the elements in the Pokémon section ', () => {
+describe('6 - Teste o componente <Pokemon.js />', () => {
   const pkmnTested = 'Pikachu';
   test('if the initial pokémon has the correct name and sprite', () => {
     renderWithRouter(<App />);

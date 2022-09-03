@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import renderWithRouter from '../renderWithRouter';
 import App from '../App';
 
-describe('tests the elements in the Pokédex page', () => {
+describe('7 - Teste o componente <PokemonDetails.js />', () => {
   const pkmnTested = 'Pikachu';
   const pkmnTestedId = 25;
   const amount = 3;

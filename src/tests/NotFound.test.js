@@ -3,7 +3,7 @@ import { screen } from '@testing-library/react';
 import renderWithRouter from '../renderWithRouter';
 import NotFound from '../pages/NotFound';
 
-describe('test the elements in the "Not Found" page', () => {
+describe('4 - Teste o componente <NotFound.js />', () => {
   test('if the heading exist with the correct text', () => {
     renderWithRouter(<NotFound />);
     const h2 = screen.getByRole('heading',

@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import renderWithRouter from '../renderWithRouter';
 import App from '../App';
 
-describe('tests the elements in the Pokédex page', () => {
+describe('5 - Teste o componente <Pokedex.js />', () => {
   test('if the page has a h2 element with the correct text', () => {
     renderWithRouter(<App />);
     const h2 = screen.getByRole('heading', { name: 'Encountered pokémons', level: 2 });
